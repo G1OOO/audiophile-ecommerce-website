@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Audiophile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #f1f1f1;">
+    <header>
+        <img src="starter-code/assets/shared/desktop/logo.svg" alt="logo">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="headphones.html">Headphones</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="earphones.html">Earphones</a>
+        </nav>
+    </header>
+    <main style="padding: 80px 165px; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; align-items: start;">
+        <section style="background: white; padding: 48px; border-radius: 8px;">
+            <h1 style="margin-bottom: 40px; color: black;">CHECKOUT</h1>
+            <h3 style="color: #D87D4A; font-size: 13px; margin-bottom: 16px;">BILLING DETAILS</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px;">
+                <input type="text" placeholder="Name" style="padding: 18px; border-radius: 8px; border: 1px solid #cfcfcf;">
+                <input type="email" placeholder="Email" style="padding: 18px; border-radius: 8px; border: 1px solid #cfcfcf;">
+            </div>
+            <h3 style="color: #D87D4A; font-size: 13px; margin-bottom: 16px;">SHIPPING INFO</h3>
+            <input type="text" placeholder="Address" style="padding: 18px; border-radius: 8px; border: 1px solid #cfcfcf; width: 100%; margin-bottom: 16px;">
+        </section>
+        <section style="background: white; padding: 32px; border-radius: 8px;">
+            <h3 style="margin-bottom: 32px;">SUMMARY</h3>
+            <div id="cart-items"></div>
+            <div style="margin-top: 32px; display: grid; gap: 8px;">
+                <div style="display: flex; justify-content: space-between;"><p style="opacity: 0.5;">TOTAL</p><p id="cart-total" style="font-weight: bold;">$ 0</p></div>
+                <div style="display: flex; justify-content: space-between;"><p style="opacity: 0.5;">SHIPPING</p><p style="font-weight: bold;">$ 50</p></div>
+                <div style="display: flex; justify-content: space-between; margin-top: 16px;"><p style="opacity: 0.5;">GRAND TOTAL</p><p id="grand-total" style="color: #D87D4A; font-weight: bold;">$ 0</p></div>
+            </div>
+            <button class="btn-orange" style="width: 100%; margin-top: 32px;">CONTINUE & PAY</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

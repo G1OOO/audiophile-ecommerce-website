@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earphones | Audiophile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="starter-code/assets/shared/desktop/logo.svg" alt="logo">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="headphones.html">Headphones</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="earphones.html">Earphones</a>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            <img src="starter-code/assets/shared/desktop/icon-cart.svg" alt="cart">
+        </div>
+    </header>
+
+    <div class="category-header">
+        <h1>EARPHONES</h1>
+    </div>
+
+    <main class="product-list">
+        <section class="product-preview">
+            <img src="starter-code/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg" alt="YX1 Wireless Earphones">
+            <div class="hero-content">
+                <span class="new-product-label">NEW PRODUCT</span>
+                <h2>YX1 Wireless Earphones</h2>
+                <p>Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in the noisiest environments with its active noise cancellation feature.</p>
+                <button class="btn-orange" onclick="location.href='product-earphones.html'">See Product</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="category-cards-container">
+        <div class="category-card">
+            <img src="starter-code/assets/shared/desktop/image-category-thumbnail-headphones.png" alt="Headphones">
+            <h3>HEADPHONES</h3>
+            <a href="headphones.html" style="color:#D87D4A; text-decoration:none; font-weight:700; font-size:13px; letter-spacing:1px;">SHOP ></a>
+        </div>
+        <div class="category-card">
+            <img src="starter-code/assets/shared/desktop/image-category-thumbnail-speakers.png" alt="Speakers">
+            <h3>SPEAKERS</h3>
+            <a href="speakers.html" style="color:#D87D4A; text-decoration:none; font-weight:700; font-size:13px; letter-spacing:1px;">SHOP ></a>
+        </div>
+        <div class="category-card">
+            <img src="starter-code/assets/shared/desktop/image-category-thumbnail-earphones.png" alt="Earphones">
+            <h3>EARPHONES</h3>
+            <a href="earphones.html" style="color:#D87D4A; text-decoration:none; font-weight:700; font-size:13px; letter-spacing:1px;">SHOP ></a>
+        </div>
+    </section>
+
+    <section class="best-gear">
+        <div>
+            <h2>BRINGING YOU THE <span style="color:#D87D4A;">BEST</span> AUDIO GEAR</h2>
+            <p style="opacity:0.5; margin-top:32px;">Located at the heart of New York City, Audiophile is the premier store for high end headphones, speakers, earphones, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        </div>
+        <img src="starter-code/assets/shared/desktop/image-best-gear.jpg" alt="Best Gear">
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <img src="starter-code/assets/shared/desktop/logo.svg" alt="logo">
+            <nav class="nav-links" style="margin: 0;">
+                <a href="index.html">Home</a>
+                <a href="headphones.html">Headphones</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="earphones.html">Earphones</a>
+            </nav>
+        </div>
+        <p class="footer-desc">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo room - we’re open 7 days a week.</p>
+        <div class="footer-bottom">
+            <p style="opacity: 0.5;">Copyright 2021. All Rights Reserved</p>
+            <div class="social-links">
+                <img src="starter-code/assets/shared/desktop/icon-facebook.svg" style="margin-left: 16px; cursor: pointer;">
+                <img src="starter-code/assets/shared/desktop/icon-twitter.svg" style="margin-left: 16px; cursor: pointer;">
+                <img src="starter-code/assets/shared/desktop/icon-instagram.svg" style="margin-left: 16px; cursor: pointer;">
+            </div>
+        </div>
+    </footer>
+
+    <div id="cart-modal">
+        <div style="display:flex; justify-content:space-between; margin-bottom:32px;">
+            <h3 style="font-size: 18px;">CART (<span id="cart-count">0</span>)</h3>
+            <button onclick="clearCart()" style="background:none; border:none; text-decoration:underline; cursor:pointer; opacity:0.5;">Remove all</button>
+        </div>
+        <div id="cart-items"></div>
+        <div style="display:flex; justify-content:space-between; margin-top:32px;">
+            <p style="opacity:0.5;">TOTAL</p>
+            <p id="cart-total" style="font-weight:bold;">$ 0</p>
+        </div>
+        <button class="btn-orange" style="width:100%; margin-top:24px;" onclick="location.href='checkout.html'">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
